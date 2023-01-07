@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
+.logo {
+  display: flex;
+}
+.navbar {
+  position: relative;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 1px;
+}
+
+.poul {
+  margin-left: 30px;
+  margin-right: 10px;
+  color: orange;
+}
+ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+li {
+  margin-left: 8rem;
+  list-style-type: none;
+  font-size: 1.3rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: orange;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-left: 18rem;
+}
+input {
+  border-radius: 5rem;
+  border: none;
+  padding: 8px;
+  font-size: 18px;
+  outline: none;
+}
+.btn {
+  margin-left: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.fie {
+  color: white;
+}
+.btn:hover {
+  background-color: orange;
+}
+
+.hero-text {
+  position: relative;
+  margin-top: 20rem;
+  margin-left: 12rem;
+}
+p {
+  color: grey;
+  font-size: 1.2rem;
+}
+
+.hero-h1 {
+  color: white;
+  font-size: 6rem;
+}
+
+.btn2 {
+  background-color: rgb(245, 172, 37);
+  padding: 20px 18px;
+  font-size: 1.8rem;
+  color: white;
+  border: none;
+  border-radius: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.img1 {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+}
+.about {
+  position: relative;
+  margin-top: 20rem;
+  padding: 10rem;
+}
+
+.about-image {
+  float: left;
+  object-fit: cover;
+  width: 44%;
+  border-radius: 15px;
+  margin-right: 5rem;
+  margin: 0 35px 35px 0;
+}
+
+.about-details {
+  margin-top: 1rem;
+}
+
+.about-h1 {
+  margin-top: 3rem;
+  font-size: 64px;
+}
+
+.about-p {
+  margin-top: 3rem;
+}
+
+.about-btn {
+  margin-top: 3rem;
+}
