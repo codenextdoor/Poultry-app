@@ -9,12 +9,23 @@
   display: flex;
 }
 .navbar {
-  position: relative;
   height: 100px;
   display: flex;
   align-items: center;
   position: sticky;
-  top: 1px;
+  top: 0;
+  z-index: 999;
+  margin: 0;
+}
+.navbar-scrolled {
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+.navbar-scrolled a {
+  color: black;
+}
+.navbar-scrolled .fie {
+  color: black;
 }
 
 .poul {
@@ -52,6 +63,11 @@ input {
   padding: 8px;
   font-size: 18px;
   outline: none;
+  background-color: #f7f7f9;
+}
+.search-bar::-webkit-input-placeholder {
+  /* Chrome, Safari, Opera */
+  padding-left: 15px;
 }
 .btn {
   margin-left: 20px;
@@ -125,9 +141,79 @@ p {
 }
 
 .about-p {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
+  font-size: 1.3rem;
 }
 
 .about-btn {
   margin-top: 3rem;
+}
+.services {
+  background-color: #f7f7f9;
+}
+
+.services-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-header p {
+  margin-top: 10rem;
+}
+
+.services-header h1 {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+.cards {
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.cards-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-content h1 {
+  margin: 30px 0 10px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.cards-content i {
+  margin: 30px 0 0 0;
+  font-size: 55px;
+  font-weight: bold;
+  color: #ff7800;
+  background-color: #f7f7f9;
+  padding: 30px;
+  border-radius: 5rem;
+  align-items: center;
+}
+
+.cards-content i:hover {
+  color: white;
+  background-color: #ff7800;
+  cursor: pointer;
+}
+
+.cards-content p {
+  margin: 30px 0 0 0;
+  font-size: 20px;
+}
+
+.three-cards {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

@@ -5,6 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="project.css" />
+    <script>
+      window.onscroll = function () {
+        var navbar = document.querySelector(".navbar");
+        var threshold = 50; // number of pixels from the top of the page
+
+        if (window.pageYOffset > threshold) {
+          navbar.classList.add("navbar-scrolled");
+        } else {
+          navbar.classList.remove("navbar-scrolled");
+        }
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -27,7 +43,7 @@
           </ul>
         </div>
         <div class="search">
-          <input type="text" placeholder="search..." />
+          <input type="text" class="search-bar" placeholder="search..." />
           <button class="btn">Go!</button>
         </div>
       </div>
@@ -59,6 +75,46 @@
             fugit.
           </p>
           <button class="about-btn btn2">Read More</button>
+        </div>
+      </div>
+
+      <!-- services -->
+      <div class="services">
+        <div class="services-header">
+          <p>WHAT WE DO</p>
+          <h1>Our Services</h1>
+        </div>
+        <div class="three-cards">
+          <div class="cards">
+            <div class="cards-content">
+              <i class="fas fa-shield-alt"></i>
+              <h1>Quality matters</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt, magnam.
+              </p>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="cards-content">
+              <i class="fas fa-truck"></i>
+              <h1>Free Shipping</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt, magnam.
+              </p>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="cards-content">
+              <i class="fas fa-user-shield"></i>
+              <h1>Custumer Satisfaction</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt, magnam.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
