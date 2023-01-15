@@ -301,16 +301,89 @@ p {
   margin-top: 20rem;
 }
 
-/* .invention-about :hover {
-  color: white;
-  background-color: #ff7800;
-  cursor: pointer;
-  transition: 300ms all;
-} */
+.gallery {
+  background-color: #f7f7f9;
+  height: 110vh;
+}
 
-/* .invention-logo i:hover {
-  color: white;
-  background-color: #ff7800;
+.gallery-texts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gallery h1 {
+  margin-top: 10px;
+  font-size: 64px;
+}
+
+.gallery-pics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-left: 12rem;
+  margin-top: 3rem;
+}
+
+.gallery-pics img {
+  width: 80%;
+  border-radius: 10px;
+  transition: filter 0.5s ease;
+}
+
+.gallery-pics img:hover {
   cursor: pointer;
-  transition: 300ms all ease-in-out;
-} */
+  filter: brightness(80%);
+}
+
+.gallery-pics img:active {
+  transform: scale(1.2);
+}
+
+.footer-texts {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-logo {
+  display: flex;
+}
+
+.newcolor {
+  color: #ff7800;
+}
+
+.footer {
+  background-color: black;
+
+  color: white;
+  height: 640px;
+}
+
+.footer-texts-2 {
+  margin-left: 11.5rem;
+  margin-top: 5rem;
+}
+.footer-texts-2 p {
+  max-width: 30%;
+}
+
+.footer-icons i {
+  background-color: white;
+  padding: 20px;
+  color: #ff7800;
+  font-size: 2rem;
+  margin: 10px;
+  margin-top: 3rem;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.footer-end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
