@@ -117,7 +117,6 @@ p {
   width: 100%;
 }
 .about {
-  position: relative;
   margin-top: 20rem;
   padding: 10rem;
 }
@@ -173,7 +172,6 @@ p {
   background-color: #fff;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  overflow: hidden;
 }
 
 .cards-content {
